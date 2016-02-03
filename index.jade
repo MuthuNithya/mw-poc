@@ -1,7 +1,26 @@
 doctype html
 html(lang="en")
     head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible",content="IE=edge,chrome=1")
         block title
             title Create Account
-        body
-        h1 create Account
+        link(href="node_modules/bootstrap/dist/css/bootstrap.min.css",rel="stylesheet")
+        link(href="node_modules/foundation-sites/dist/foundation.min.css",rel="stylesheet")
+        link(href="node_modules/foundation-sites/dist/foundation-flex.min.css",rel="stylesheet")
+    body
+        div.divCreateAccount
+            h1 Create an account to continue
+            div Already have an account?. SIGN IN HERE
+
+            form#formCreateAcc.formCreateAcc
+                input(placeholder="First Name",id="txtFirstName",type="text")
+                input(placeholder="Last Name",id="txtLastName",type="text")
+                input(placeholder="Email Address",id="txtEmailAdd",type="email")
+                input(placeholder="Password",id="txtPassword",type="password")
+                input(placeholder="Password Again",id="txtConfPassword",type="password")
+
+        script(src="node_modules/jquery/dist/jquery.min.js")
+        script(src="node_modules/bootstrap/dist/js/bootstrap.min.js")
+        script(src="node_modules/foundation-sites/dist/foundation.min.js")
+        script $(document).foundation();

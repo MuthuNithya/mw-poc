@@ -5,6 +5,7 @@
   "description": "MW_JA_packages",
   "dependencies": {},
   "devDependencies": {
+    "jquery":"^1.12.0",
     "browser-sync": "^2.8.2",
     "gulp": "^3.9.0",
     "gulp-compass": "^2.1.0",
