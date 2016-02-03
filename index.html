@@ -1,1 +1,75 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>Create Account</title><link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"><link href="node_modules/foundation-sites/dist/foundation.min.css" rel="stylesheet"><link href="node_modules/foundation-sites/dist/foundation-flex.min.css" rel="stylesheet"></head><body><div class="divCreateAccount"><h1>Create an account to continue</h1><div>Already have an account?. SIGN IN HERE</div><form id="formCreateAcc" class="formCreateAcc"><input placeholder="First Name" id="txtFirstName" type="text"><input placeholder="Last Name" id="txtLastName" type="text"><input placeholder="Email Address" id="txtEmailAdd" type="email"><input placeholder="Password" id="txtPassword" type="password"><input placeholder="Password Again" id="txtConfPassword" type="password"></form></div><script src="node_modules/jquery/dist/jquery.min.js"></script><script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script><script src="node_modules/foundation-sites/dist/foundation.min.js"></script><script>$(document).foundation();</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Create Account</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="all">
+    <link href="node_modules/foundation-sites/dist/foundation.min.css" rel="stylesheet" media="all">
+    <link href="node_modules/foundation-sites/dist/foundation-flex.min.css" rel="stylesheet" media="all">
+    <link href="css/create-acc.css" rel="stylesheet" media="all">
+  </head>
+  <body>
+    <div class="divCreateAccount">
+      <div class="progress-indicator">
+        <div class="fl-lt">
+          <div class="first-step"></div>
+          <div>Look</div>
+        </div>
+        <div class="fl-lt">
+          <div class="separator"></div>
+        </div>
+        <div class="fl-lt">
+          <div class="second-step"></div>
+          <div>Event</div>
+        </div>
+        <div class="fl-lt">
+          <div class="separator"></div>
+        </div>
+        <div class="fl-lt">
+          <div class="third-step"></div>
+          <div>Size</div>
+        </div>
+        <div class="fl-lt">
+          <div class="separator"></div>
+        </div>
+        <div class="fl-lt">
+          <div class="fourth-step"></div>
+          <div>Order</div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="divUserDet">
+        <h1>Create an account to continue</h1>
+        <div class="mbtm-15">Already have an account?. SIGN IN HERE</div>
+        <form id="formCreateAcc" action="" name="formCreateAcc" class="formCreateAcc">
+          <input placeholder="First Name" id="txtFirstName" type="text">
+          <input placeholder="Last Name" id="txtLastName" type="text">
+          <input placeholder="Email Address" id="txtEmailAdd" type="email">
+          <input placeholder="Password" id="txtPassword" type="password">
+          <input placeholder="Password Again" id="txtConfPassword" type="password">
+          <div>
+            <input type="checkbox" name="chkEmailMe" id="chkEmailMe" checked>
+            <label for="chkEmailMe">Email me about exclusive sales and promotions</label>
+          </div>
+          <div>
+            <input type="checkbox" name="chkTextMe" id="chkTextMe">
+            <label for="chkTextMe">Text me about exclusive sales and promotions</label>
+          </div>
+          <div>
+            <input type="checkbox" name="chkJoinPF" id="chkJoinPF">
+            <label for="chkJoinPF">I would like to join the PerfectFit program to get $30 off my reservation <i class="glyphicon glyphicon-info-sign"></i></label>
+          </div>
+          <div class="continue-btn">
+            <button type="button" id="btnContinue" class="button secondary">Continue</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/foundation-sites/dist/foundation.min.js"></script>
+    <script src="js/create-acc.js"></script>
+    <script>$(document).foundation();</script>
+  </body>
+</html>
