@@ -4,6 +4,8 @@
   clear: both; }
 .divCreateAccount .mbtm-15 {
   margin-bottom: 15px; }
+.divCreateAccount .alert .error-msg {
+  padding-left: 15px; }
 .divCreateAccount .divUserDet {
   /* Medium and up */
   /* Small only */
@@ -20,6 +22,8 @@
     font-family: arial; }
   .divCreateAccount .divUserDet form input [typeof="text"], .divCreateAccount .divUserDet form input [typeof="password"], .divCreateAccount .divUserDet form input [typeof="email"] {
     width: 90%; }
+  .divCreateAccount .divUserDet form input [typeof="tel"] {
+    width: 300px; }
   .divCreateAccount .divUserDet form label {
     word-wrap: break-word;
     width: 90%;

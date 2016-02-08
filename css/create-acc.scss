@@ -8,6 +8,11 @@
   .mbtm-15{
     margin-bottom: 15px;
   }
+  .alert{
+    .error-msg{
+      padding-left:15px;
+    }
+  }
   .divUserDet{
     /* Medium and up */
     @media screen and (min-width: 40em) {
@@ -27,6 +32,9 @@
       input{
         [typeof="text"],[typeof="password"],[typeof="email"]{
           width:90%;
+        }
+        [typeof="tel"]{
+          width: 300px;
         }
       }
       label{

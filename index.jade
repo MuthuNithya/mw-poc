@@ -32,6 +32,11 @@ html(lang="en")
                     div Order
                 div.clear
             div.divUserDet
+                div.alert.alert-danger.hide(role="alert")
+                    span(Class="glyphicon glyphicon-exclamation-sign",aria-hidden="true")
+                    span.sr-only Error
+                    span.error-msg
+
                 h1 Create an account to continue
                 div.mbtm-15 Already have an account?. SIGN IN HERE
 
@@ -49,6 +54,9 @@ html(lang="en")
                     div
                         input(type="checkbox",name="chkTextMe",id="chkTextMe")
                         label(for="chkTextMe") Text me about exclusive sales and promotions
+                        div.hide#divMobileNumber
+                            label(for="txtPhoneNumber") Mobile Number
+                            input(type="tel",name="txtPhoneNumber",id="txtPhoneNumber")
 
                     div
                         input(type="checkbox",name="chkJoinPF",id="chkJoinPF")

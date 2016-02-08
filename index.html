@@ -40,6 +40,7 @@
         <div class="clear"></div>
       </div>
       <div class="divUserDet">
+        <div role="alert" class="alert alert-danger hide"><span Class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error</span><span class="error-msg"></span></div>
         <h1>Create an account to continue</h1>
         <div class="mbtm-15">Already have an account?. SIGN IN HERE</div>
         <form id="formCreateAcc" action="" name="formCreateAcc" class="formCreateAcc">
@@ -55,6 +56,10 @@
           <div>
             <input type="checkbox" name="chkTextMe" id="chkTextMe">
             <label for="chkTextMe">Text me about exclusive sales and promotions</label>
+            <div id="divMobileNumber" class="hide">
+              <label for="txtPhoneNumber">Mobile Number</label>
+              <input type="tel" name="txtPhoneNumber" id="txtPhoneNumber">
+            </div>
           </div>
           <div>
             <input type="checkbox" name="chkJoinPF" id="chkJoinPF">
