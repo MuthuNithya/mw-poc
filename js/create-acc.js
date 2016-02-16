@@ -49,9 +49,14 @@ $(document).ready(function(){
 
     $('#btnContinue').click(function(){
         if(validateCreateAcc()){
-            alert('valid');
-        } else{
-            //alert('invalid');
+            $('button#btnContinue').addClass('hide');
+            $('button#loadingbtn').removeClass('hide');
+            setTimeout(
+                function()
+                {
+                    localStorage.setItem("name",$('#txtFirstName').val() + ' '+ $('#txtLastName').val());
+                    window.location.replace("file:///C:/Users/ms453/Documents/Workspace/mw-poc/step2/step2.html");
+                }, 5000);
         }
     });
 
